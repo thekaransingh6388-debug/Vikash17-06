@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>TRED WITH RAJU | Binary Trading Signals</title>
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Fonts: Modern, clean, and premium -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6 (free icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(145deg, #0a0f1e 0%, #0c1222 100%);
+      color: #eef2ff;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    /* premium glassmorphism elements */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 1.5rem 1.8rem;
+    }
+
+    /* hero section */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 2rem 0 3rem;
+    }
+
+    .logo-wrapper {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(4px);
+      border-radius: 80px;
+      padding: 0.5rem;
+      display: inline-block;
+      margin-bottom: 1.2rem;
+      border: 1px solid rgba(255, 215, 0, 0.2);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo-img {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 60px;
+      border: 2px solid #ffd966;
+      box-shadow: 0 0 12px rgba(255, 217, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .logo-img:hover {
+      transform: scale(1.02);
+    }
+
+    .brand-title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #FFFFFF 0%, #FFE6A3 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #bfc9f0;
+      max-width: 600px;
+      margin: 0.5rem auto;
+    }
+
+    .badge-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 1.8rem 0 1rem;
+    }
+
+    .badge {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(8px);
+      padding: 0.5rem 1.4rem;
+      border-radius: 40px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      border: 1px solid rgba(255, 215, 0, 0.3);
+      color: #FDE68A;
+    }
+
+    /* main card */
+    .card-premium {
+      background: rgba(18, 25, 45, 0.75);
+      backdrop-filter: blur(12px);
+      border-radius: 3rem;
+      padding: 2.2rem 2rem;
+      margin: 2rem 0;
+      border: 1px solid rgba(255, 215, 0, 0.25);
+      box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255,255,200,0.05);
+      transition: transform 0.2s;
+    }
+
+    .highlight-text {
+      font-size: 1.9rem;
+      font-weight: 800;
+      line-height: 1.2;
+      background: linear-gradient(120deg, #FFF8E7, #FFD966);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 1rem;
+    }
+
+    .description {
+      font-size: 1.05rem;
+      color: #cdd9ff;
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 2.2rem 0 1rem;
+    }
+
+    .telegram-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: linear-gradient(95deg, #2AABEE 0%, #1c82c9 100%);
+      padding: 1rem 2.2rem;
+      border-radius: 60px;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 12px 18px -8px rgba(0,0,0,0.4);
+      letter-spacing: 0.3px;
+      backdrop-filter: blur(2px);
+    }
+
+    .telegram-btn i {
+      font-size: 1.6rem;
+      filter: drop-shadow(0 2px 2px rgba(0,0,0,0.2));
+    }
+
+    .telegram-btn:hover {
+      transform: translateY(-4px);
+      background: linear-gradient(95deg, #3db6f0, #2a8ed6);
+      box-shadow: 0 22px 28px -12px rgba(0, 0, 0, 0.5);
+    }
+
+    .telegram-btn:active {
+      transform: translateY(2px);
+    }
+
+    .btn-outline-premium {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1.5px solid #FFD966;
+      box-shadow: none;
+      color: #FFE6A3;
+    }
+
+    .btn-outline-premium i {
+      color: #FFD966;
+    }
+
+    .btn-outline-premium:hover {
+      background: rgba(255, 217, 102, 0.12);
+      border-color: #FFE08C;
+      color: white;
+    }
+
+    /* features grid */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.8rem;
+      margin: 3rem 0 2rem;
+    }
+
+    .feature-card {
+      background: rgba(10, 16, 30, 0.6);
+      border-radius: 2rem;
+      padding: 1.4rem;
+      text-align: center;
+      border: 1px solid rgba(255, 217, 102, 0.2);
+      transition: all 0.25s;
+    }
+
+    .feature-card i {
+      font-size: 2.2rem;
+      color: #FFD966;
+      margin-bottom: 1rem;
+    }
+
+    .feature-card h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .feature-card p {
+      font-size: 0.9rem;
+      color: #b9c3ed;
+    }
+
+    .feature-card:hover {
+      background: rgba(255, 217, 102, 0.08);
+      border-color: #FFD966;
+      transform: translateY(-5px);
+    }
+
+    /* footer / disclaimer */
+    .footer-note {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.75rem;
+      color: #6b7a9f;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 2rem;
+    }
+
+    /* glow effect */
+    .glow-text {
+      text-shadow: 0 0 8px rgba(255, 220, 80, 0.5);
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 1rem 1.2rem;
+      }
+      .brand-title {
+        font-size: 1.9rem;
+      }
+      .highlight-text {
+        font-size: 1.5rem;
+      }
+      .telegram-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+      }
+      .btn-group {
+        gap: 1rem;
+      }
+      .card-premium {
+        padding: 1.5rem;
+      }
+    }
+
+    /* custom cursor / subtle animation */
+    @keyframes fadeUp {
+      0% {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero, .card-premium, .features {
+      animation: fadeUp 0.7s ease-out forwards;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Hero section with logo and brand -->
+  <div class="hero">
+    <div class="logo-wrapper">
+      <img class="logo-img" src="https://karanmetalabe.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-09-at-11.37.09-AM.jpeg" alt="TRED WITH RAJU Logo" onerror="this.onerror=null; this.src='https://placehold.co/400x400?text=TRADING+LOGO';">
+    </div>
+    <h1 class="brand-title">TRED WITH RAJU</h1>
+    <div class="tagline">Elite Binary Trading Signals • High Win-rate Strategies</div>
+    <div class="badge-group">
+      <span class="badge"><i class="fas fa-chart-line"></i> 85%+ Accuracy</span>
+      <span class="badge"><i class="fas fa-clock"></i> 24/7 Live Updates</span>
+      <span class="badge"><i class="fas fa-robot"></i> AI + Manual Analysis</span>
+    </div>
+  </div>
+
+  <!-- Main premium card with double CTA (Telegram) -->
+  <div class="card-premium">
+    <div class="highlight-text">⚡ Limited Spots: Join Profitable Binary Signal Channel</div>
+    <div class="description">
+      Get real-time binary options signals, market analysis, and entry/exit alerts directly from RAJU. 
+      Start trading with confidence — no experience needed. <strong>Join our private Telegram community today!</strong>
+    </div>
+
+    <!-- Two Telegram Buttons (both with same channel link) -->
+    <div class="btn-group">
+      <a href="https://t.me/+WaFZ7sUcIGxhZjE9" target="_blank" rel="noopener noreferrer" class="telegram-btn">
+        <i class="fab fa-telegram-plane"></i> Join Telegram Channel
+      </a>
+      <a href="https://t.me/+WaFZ7sUcIGxhZjE9" target="_blank" rel="noopener noreferrer" class="telegram-btn btn-outline-premium">
+        <i class="fab fa-telegram"></i> Get Instant Access
+      </a>
+    </div>
+    <p style="font-size: 0.8rem; margin-top: 1rem; opacity: 0.7; text-align: center;">
+      <i class="fas fa-shield-alt"></i> 100% free channel • Daily signals • Support 24/7
+    </p>
+  </div>
+
+  <!-- Feature section for trust & engagement -->
+  <div class="features">
+    <div class="feature-card">
+      <i class="fas fa-chart-simple"></i>
+      <h3>Binary Options Signals</h3>
+      <p>60s, 5min, End-of-day — precise signals with expiry & asset.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-bullhorn"></i>
+      <h3>Live Market Calls</h3>
+      <p>Real-time trade alerts with entry price, stop loss & take profit.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-users"></i>
+      <h3>20k+ Active Traders</h3>
+      <p>Join a trusted community & learn pro strategies.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-chalkboard-user"></i>
+      <h3>Training & Mentorship</h3>
+      <p>Daily education, webinars & risk management tips.</p>
+    </div>
+  </div>
+
+  <!-- Extra line: "Acha line likha ho" - inspirational line before footer -->
+  <div style="text-align: center; margin: 1.2rem 0 1rem;">
+    <p style="font-style: italic; font-weight: 500; font-size: 1rem; background: linear-gradient(135deg, #E0E7FF, #FFE6B3); -webkit-background-clip: text; background-clip: text; color: transparent;">
+      📈 “Trade smart, stay disciplined — profits follow consistency.” — RAJU
+    </p>
+  </div>
+
+  <div class="footer-note">
+    <p>⚠️ Binary trading involves risk. Past performance does not guarantee future results. Trade responsibly.<br>
+    © 2026 TRED WITH RAJU — All rights reserved. | Channel signals for educational & informational purposes.</p>
+  </div>
+</div>
+
+<!-- META PIXEL CODE (exactly as provided) -->
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1359297168743018');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1359297168743018&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- Additional small script to ensure pixel loads safely and track any button clicks optionally (no interference)-->
+<script>
+  (function() {
+    // Additional safety: If you want to track Telegram button clicks custom event (optional), 
+    // but the main pixel already fires PageView. For better conversion tracking you could add event,
+    // but we preserve original pixel id requirements. Keeping robust without breaking anything.
+    // This ensures that pixel is already active on page load.
+    if (typeof fbq === 'function') {
+      console.log("Meta Pixel initialized – tracking active for TRED WITH RAJU.");
+      // optional: you could track custom events like 'Lead' but not needed as per primary spec. 
+      // We respect initial code as given.
+    }
+  })();
+</script>
+</body>
+</html>
