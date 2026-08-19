@@ -32,7 +32,7 @@
         .feature-item:nth-child(3) { animation-delay: 0.6s; }
     </style>
 
-    <!-- NEW Meta Pixel Code (ID: 1409568357710533) -->
+    <!-- NEW Meta Pixel Code (ID: 1392304353047803) -->
     <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -42,11 +42,11 @@
         t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1409568357710533');
+        fbq('init', '1392304353047803');
         fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=1409568357710533&ev=PageView&noscript=1"
+        src="https://www.facebook.com/tr?id=1392304353047803&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
 </head>
@@ -181,14 +181,32 @@
         }
     </style>
 
-    <!-- Event tracking: Subscribe on CTA click -->
+    <!-- Event tracking: Subscribe + multiple events on CTA click -->
     <script>
         (function() {
             const btn = document.getElementById("telegram-btn");
             if (btn) {
                 btn.addEventListener('click', function(e) {
                     if (typeof fbq === 'function') {
+                        // Track Subscribe
                         fbq('track', 'Subscribe');
+                        // Track Lead
+                        fbq('track', 'Lead', {
+                            content_name: 'Telegram_Join_PANKAJ_BHARDWAJ',
+                            content_category: 'Telegram_Channel',
+                            method: 'telegram_click'
+                        });
+                        // Track InitiateContact
+                        fbq('track', 'InitiateContact', {
+                            contact_method: 'Telegram',
+                            content_name: 'PANKAJ_BHARDWAJ_WAY2LAAB'
+                        });
+                        // Track Custom Event
+                        fbq('trackCustom', 'TelegramJoinClick_PANKAJ', {
+                            owner: 'PANKAJ_BHARDWAJ',
+                            timestamp: new Date().toISOString()
+                        });
+                        console.log('✅ Pixel events tracked: Subscribe, Lead, InitiateContact, Custom');
                     }
                 });
             }
